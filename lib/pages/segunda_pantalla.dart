@@ -1,7 +1,7 @@
 import 'package:votacion_simulacro/barril.dart';
 
-class PrincipalPage extends StatelessWidget {
-  const PrincipalPage({super.key});
+class Segundapantalla extends StatelessWidget {
+  const Segundapantalla({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,16 +23,16 @@ class PrincipalPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/images/maquina0_p6.png',
-              width: anchoCuadrado,
+              'assets/images/boletaci.png',
+              width: size.width * 0.4,
               height: anchoCuadrado,
               fit: BoxFit.cover,
             ),
             Container(
               transform: Matrix4.translationValues(0.0, -20.0, 0.0),
               child: const Text(
-                'Simulador del uso de la máquina de votación.',
-                style: TextStyle(fontSize: 33),
+                'Presentá tu cédula de identidad civil a los miiembros de la mesa receptora de votos,\nquienes te entregaran el boletín firmado por los vocales.',
+                style: TextStyle(fontSize: 26),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -41,13 +41,13 @@ class PrincipalPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const Segundapantalla(),
+                    builder: (context) => const TerceraPantalla(),
                   ),
                 );
               },
-              child: const Text('Comenzar', style: TextStyle(fontSize: 20)),
+              child: const Text('Continuar', style: TextStyle(fontSize: 20)),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color.fromRGBO(92, 184, 92, 1),
+                backgroundColor: Color.fromRGBO(51, 122, 183, 1),
                 foregroundColor: Colors.white,
                 shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(10)),

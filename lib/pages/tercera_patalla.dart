@@ -1,7 +1,7 @@
 import 'package:votacion_simulacro/barril.dart';
 
-class PrincipalPage extends StatelessWidget {
-  const PrincipalPage({super.key});
+class TerceraPantalla extends StatelessWidget {
+  const TerceraPantalla({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,16 +23,17 @@ class PrincipalPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/images/maquina0_p6.png',
+              'assets/images/maquina2_p6.png',
               width: anchoCuadrado,
               height: anchoCuadrado,
               fit: BoxFit.cover,
             ),
+            SizedBox(height: 20),
             Container(
               transform: Matrix4.translationValues(0.0, -20.0, 0.0),
               child: const Text(
-                'Simulador del uso de la máquina de votación.',
-                style: TextStyle(fontSize: 33),
+                'Colocá el boletín en la ranura como lo indica la flecha.',
+                style: TextStyle(fontSize: 28),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -41,13 +42,13 @@ class PrincipalPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const Segundapantalla(),
+                    builder: (context) => const CuartaPantalla(),
                   ),
                 );
               },
-              child: const Text('Comenzar', style: TextStyle(fontSize: 20)),
+              child: const Text('Continuar', style: TextStyle(fontSize: 20)),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color.fromRGBO(92, 184, 92, 1),
+                backgroundColor: Color.fromRGBO(51, 122, 183, 1),
                 foregroundColor: Colors.white,
                 shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
