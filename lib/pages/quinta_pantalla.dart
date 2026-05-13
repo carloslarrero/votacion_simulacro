@@ -41,12 +41,10 @@ class QuintaPantalla extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => const Segundapantalla(),
-                  ),
+                  MaterialPageRoute(builder: (context) => const Votacion1()),
                 );
               },
-              child: const Text('Continuar', style: TextStyle(fontSize: 20)),
+              child: const Text('Iniciar', style: TextStyle(fontSize: 20)),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color.fromRGBO(51, 122, 183, 1),
                 foregroundColor: Colors.white,

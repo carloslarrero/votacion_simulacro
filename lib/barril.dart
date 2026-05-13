@@ -5,3 +5,5 @@ export 'pages/segunda_pantalla.dart';
 export 'pages/tercera_patalla.dart';
 export 'pages/cuarta_pantalla.dart';
 export 'pages/quinta_pantalla.dart';
+export 'pages/votacion_1.dart';
+export 'utils/appbar_votacion.dart';
