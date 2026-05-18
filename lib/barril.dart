@@ -6,4 +6,7 @@ export 'pages/tercera_patalla.dart';
 export 'pages/cuarta_pantalla.dart';
 export 'pages/quinta_pantalla.dart';
 export 'pages/votacion_1.dart';
+export 'pages/votacion_2.dart';
 export 'utils/appbar_votacion.dart';
+export 'pages/votacion_3.dart';
+export 'pages/confirmacion.dart';

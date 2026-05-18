@@ -73,7 +73,7 @@ class AppBarVotacion extends StatelessWidget implements PreferredSizeWidget {
               ),
               alignment: Alignment.center,
               child: Text(
-                titleBottom.toUpperCase(),
+                titleBottom,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: fontSizeBottom,

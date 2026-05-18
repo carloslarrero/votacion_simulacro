@@ -1,7 +1,7 @@
 import 'package:votacion_simulacro/barril.dart';
 
-class Votacion1 extends StatelessWidget {
-  const Votacion1({super.key});
+class Confirmacion extends StatelessWidget {
+  const Confirmacion({super.key});
 
   @override
   Widget build(BuildContext context) {

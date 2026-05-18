@@ -1,7 +1,7 @@
 import 'package:votacion_simulacro/barril.dart';
 
-class Votacion1 extends StatelessWidget {
-  const Votacion1({super.key});
+class Votacion2 extends StatelessWidget {
+  const Votacion2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class Votacion1 extends StatelessWidget {
         backgroundColor: Color.fromRGBO(84, 88, 89, 1),
         imagePathLeading: 'assets/images/logo_eleccion.png',
         imagePathTrailing: 'assets/images/header.png',
-        titleBottom: 'Precandidatos a INTENDENTE',
+        titleBottom: 'Listas participantes al Cargo de Junta Municipal',
         titleTop: Row(
           children: [
             Text('Elección: ', style: TextStyle(color: Colors.white)),
@@ -49,66 +49,34 @@ class Votacion1 extends StatelessWidget {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Votacion2()),
+                          MaterialPageRoute(builder: (context) => Votacion3()),
                         );
                       },
                       contenido: Padding(
-                        padding: const EdgeInsets.all(20),
+                        padding: const EdgeInsets.symmetric(
+                          //vertical: 1,
+                          horizontal: 15,
+                        ),
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'HONOR COLORADO',
+                              'LISTA 2',
                               style: TextStyle(
-                                fontSize: 24,
+                                fontSize: size.width * 0.05,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            const SizedBox(height: 15),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                Transform.translate(
-                                  offset: const Offset(-50, 0),
-                                  child: Image.asset(
-                                    'assets/images/oc.jpg',
-                                    width: imageSize,
-                                    height: imageSize,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                                Column(
-                                  children: [
-                                    Text(
-                                      'LISTA',
-                                      style: TextStyle(
-                                        fontSize: 24,
-                                        fontWeight: FontWeight.bold,
-                                        height: 1.1,
-                                      ),
-                                    ),
-                                    Text(
-                                      '2',
-                                      style: TextStyle(
-                                        fontSize: 44,
-                                        fontWeight: FontWeight.bold,
-                                        height: 1.1,
-                                      ),
-                                    ),
-                                    Text(
-                                      'MHC',
-                                      style: TextStyle(
-                                        fontSize: 24,
-                                        height: 1.1,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 15),
                             Text(
-                              'OSCAR CUENCA',
-                              style: TextStyle(fontSize: 24),
+                              'HONOR COLORADO',
+                              style: TextStyle(
+                                fontSize: size.width * 0.025,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              'MHC',
+                              style: TextStyle(fontSize: size.width * 0.025),
                             ),
                           ],
                         ),
@@ -119,55 +87,30 @@ class Votacion1 extends StatelessWidget {
                   Expanded(
                     child: _buildCuadroVotacion(
                       contenido: Padding(
-                        padding: const EdgeInsets.all(20),
+                        padding: const EdgeInsets.symmetric(
+                          //vertical: 1,
+                          horizontal: 15,
+                        ),
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'FUERZA REPUBLICANA',
+                              'LISTA 3',
                               style: TextStyle(
-                                fontSize: 24,
+                                fontSize: size.width * 0.05,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            const SizedBox(height: 15),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                Transform.translate(
-                                  offset: const Offset(-50, 0),
-                                  child: Image.asset(
-                                    'assets/images/anonimoo.png',
-                                    width: imageSize,
-                                    height: imageSize,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                                Column(
-                                  children: [
-                                    Text(
-                                      'LISTA',
-                                      style: TextStyle(
-                                        fontSize: 24,
-                                        fontWeight: FontWeight.bold,
-                                        height: 1.1,
-                                      ),
-                                    ),
-                                    Text(
-                                      '3',
-                                      style: TextStyle(
-                                        fontSize: 44,
-                                        fontWeight: FontWeight.bold,
-                                        height: 1.1,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 15),
                             Text(
-                              'OTRO CANDIDATO',
-                              style: TextStyle(fontSize: 24),
+                              'FUERZA REPUBLICANA',
+                              style: TextStyle(
+                                fontSize: size.width * 0.025,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              'MFR',
+                              style: TextStyle(fontSize: size.width * 0.025),
                             ),
                           ],
                         ),
@@ -183,62 +126,30 @@ class Votacion1 extends StatelessWidget {
                   Expanded(
                     child: _buildCuadroVotacion(
                       contenido: Padding(
-                        padding: const EdgeInsets.all(20),
+                        padding: const EdgeInsets.symmetric(
+                          //vertical: 1,
+                          horizontal: 15,
+                        ),
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'COLORADO AÑETETE',
+                              'LISTA 6',
                               style: TextStyle(
-                                fontSize: 24,
+                                fontSize: size.width * 0.05,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            const SizedBox(height: 15),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                Transform.translate(
-                                  offset: const Offset(-50, 0),
-                                  child: Image.asset(
-                                    'assets/images/anonimoo.png',
-                                    width: imageSize,
-                                    height: imageSize,
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                                Column(
-                                  children: [
-                                    Text(
-                                      'LISTA',
-                                      style: TextStyle(
-                                        fontSize: 24,
-                                        fontWeight: FontWeight.bold,
-                                        height: 1.1,
-                                      ),
-                                    ),
-                                    Text(
-                                      '6',
-                                      style: TextStyle(
-                                        fontSize: 44,
-                                        fontWeight: FontWeight.bold,
-                                        height: 1.1,
-                                      ),
-                                    ),
-                                    Text(
-                                      'MCA',
-                                      style: TextStyle(
-                                        fontSize: 24,
-                                        height: 1.1,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 15),
                             Text(
-                              'OTRO CANDIDATO',
-                              style: TextStyle(fontSize: 24),
+                              'COLORADO AÑETETE',
+                              style: TextStyle(
+                                fontSize: size.width * 0.025,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              'MCA',
+                              style: TextStyle(fontSize: size.width * 0.025),
                             ),
                           ],
                         ),
