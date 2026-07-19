@@ -14,20 +14,20 @@ class Votacion2 extends StatelessWidget {
         backgroundColor: Color.fromRGBO(84, 88, 89, 1),
         imagePathLeading: 'assets/images/logo_eleccion.png',
         imagePathTrailing: 'assets/images/header.png',
-        titleBottom: 'Listas participantes al Cargo de Junta Municipal',
+        titleBottom: 'Listas participantes al Cargo de JUNTA MUNICIPAL',
         titleTop: Row(
           children: [
             Text('Elección: ', style: TextStyle(color: Colors.white)),
             Text(
-              'ELECCIONES INTERNAS PARTIDARIAS 2026',
+              'ELECCIONES MUNICIPALES 2026',
               style: TextStyle(color: Colors.white),
             ),
             SizedBox(width: size.width * 0.02),
             Text('Departamento: ', style: TextStyle(color: Colors.white)),
-            Text('MISIONES', style: TextStyle(color: Colors.white)),
+            Text('8-MISIONES', style: TextStyle(color: Colors.white)),
             SizedBox(width: size.width * 0.02),
             Text('Distrito: ', style: TextStyle(color: Colors.white)),
-            Text('SANTIAGO', style: TextStyle(color: Colors.white)),
+            Text('13-SANTIAGO', style: TextStyle(color: Colors.white)),
             SizedBox(width: size.width * 0.02),
             Text('Zona: ', style: TextStyle(color: Colors.white)),
             Text('8', style: TextStyle(color: Colors.white)),
@@ -46,6 +46,7 @@ class Votacion2 extends StatelessWidget {
                 children: [
                   Expanded(
                     child: _buildCuadroVotacion(
+                      color: Color.fromRGBO(255, 0, 0, 1),
                       onTap: () {
                         Navigator.push(
                           context,
@@ -61,22 +62,27 @@ class Votacion2 extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'LISTA 2',
+                              'LISTA 1',
                               style: TextStyle(
                                 fontSize: size.width * 0.05,
                                 fontWeight: FontWeight.bold,
+                                color: Colors.white,
                               ),
                             ),
                             Text(
-                              'HONOR COLORADO',
+                              'PARTIDO COLORADO',
                               style: TextStyle(
                                 fontSize: size.width * 0.025,
                                 fontWeight: FontWeight.bold,
+                                color: Colors.white,
                               ),
                             ),
                             Text(
-                              'MHC',
-                              style: TextStyle(fontSize: size.width * 0.025),
+                              'ANR',
+                              style: TextStyle(
+                                fontSize: size.width * 0.025,
+                                color: Colors.white,
+                              ),
                             ),
                           ],
                         ),
@@ -86,6 +92,7 @@ class Votacion2 extends StatelessWidget {
                   const SizedBox(width: 15),
                   Expanded(
                     child: _buildCuadroVotacion(
+                      color: Color.fromRGBO(0, 43, 199, 1),
                       contenido: Padding(
                         padding: const EdgeInsets.symmetric(
                           //vertical: 1,
@@ -95,22 +102,27 @@ class Votacion2 extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'LISTA 3',
+                              'LISTA 2',
                               style: TextStyle(
                                 fontSize: size.width * 0.05,
                                 fontWeight: FontWeight.bold,
+                                color: Colors.white,
                               ),
                             ),
                             Text(
-                              'FUERZA REPUBLICANA',
+                              'PARTIDO LIBERAL RADICAL AUTENTICO',
+                              style: TextStyle(
+                                fontSize: size.width * 0.022,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text(
+                              'PLRA',
                               style: TextStyle(
                                 fontSize: size.width * 0.025,
-                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
                               ),
-                            ),
-                            Text(
-                              'MFR',
-                              style: TextStyle(fontSize: size.width * 0.025),
                             ),
                           ],
                         ),
@@ -125,50 +137,22 @@ class Votacion2 extends StatelessWidget {
                 children: [
                   Expanded(
                     child: _buildCuadroVotacion(
-                      contenido: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          //vertical: 1,
-                          horizontal: 15,
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              'LISTA 6',
-                              style: TextStyle(
-                                fontSize: size.width * 0.05,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            Text(
-                              'COLORADO AÑETETE',
-                              style: TextStyle(
-                                fontSize: size.width * 0.025,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            Text(
-                              'MCA',
-                              style: TextStyle(fontSize: size.width * 0.025),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 15),
-                  Expanded(
-                    child: _buildCuadroVotacion(
                       contenido: Center(
                         child: Text(
                           'VOTO EN BLANCO',
                           style: TextStyle(
                             fontSize: 40,
                             fontWeight: FontWeight.bold,
+                            color: Colors.black,
                           ),
                         ),
                       ),
                     ),
+                  ),
+                  const SizedBox(width: 15),
+                  Expanded(
+                    child:
+                        Container(), // espacio vacío para mantener la columna derecha
                   ),
                 ],
               ),
@@ -250,14 +234,18 @@ class Votacion2 extends StatelessWidget {
   }
 }
 
-Widget _buildCuadroVotacion({Widget? contenido, VoidCallback? onTap}) {
+Widget _buildCuadroVotacion({
+  Widget? contenido,
+  VoidCallback? onTap,
+  Color color = Colors.white,
+}) {
   return AspectRatio(
     aspectRatio: 1.9,
     child: GestureDetector(
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: color,
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
             color: const Color.fromRGBO(152, 152, 152, 1),

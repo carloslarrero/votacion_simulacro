@@ -19,15 +19,15 @@ class Confirmacion extends StatelessWidget {
           children: [
             Text('Elección: ', style: TextStyle(color: Colors.white)),
             Text(
-              'ELECCIONES INTERNAS PARTIDARIAS 2026',
+              'ELECCIONES MUNICIPALES 2026',
               style: TextStyle(color: Colors.white),
             ),
             SizedBox(width: size.width * 0.02),
             Text('Departamento: ', style: TextStyle(color: Colors.white)),
-            Text('MISIONES', style: TextStyle(color: Colors.white)),
+            Text('8-MISIONES', style: TextStyle(color: Colors.white)),
             SizedBox(width: size.width * 0.02),
             Text('Distrito: ', style: TextStyle(color: Colors.white)),
-            Text('SANTIAGO', style: TextStyle(color: Colors.white)),
+            Text('13-SANTIAGO', style: TextStyle(color: Colors.white)),
             SizedBox(width: size.width * 0.02),
             Text('Zona: ', style: TextStyle(color: Colors.white)),
             Text('8', style: TextStyle(color: Colors.white)),
@@ -46,7 +46,7 @@ class Confirmacion extends StatelessWidget {
               flex: 6,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Color.fromRGBO(255, 0, 0, 1),
                   borderRadius: BorderRadius.circular(2),
                   border: Border.all(
                     color: const Color.fromRGBO(152, 152, 152, 1),
@@ -58,28 +58,31 @@ class Confirmacion extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'INTENDENTE',
+                        'INTENDENTE MUNICIPAL',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: size.width * 0.025,
+                          color: Colors.white,
                         ),
                       ),
                       SizedBox(height: size.width * 0.005),
                       Divider(height: 2, color: Colors.black),
                       SizedBox(height: size.width * 0.01),
                       Text(
-                        'MOVIMIENTO HONOR COLORADO',
+                        'PARTIDO COLORADO',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: size.width * 0.025,
+                          color: Colors.white,
                         ),
                       ),
                       SizedBox(height: size.width * 0.015),
                       Text(
-                        'LISTA 2',
+                        'LISTA 1',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: size.width * 0.025,
+                          color: Colors.white,
                         ),
                       ),
                       SizedBox(height: size.width * 0.01),
@@ -94,6 +97,7 @@ class Confirmacion extends StatelessWidget {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: size.width * 0.025,
+                          color: Colors.white,
                         ),
                       ),
                       SizedBox(height: size.width * 0.033),
@@ -136,7 +140,7 @@ class Confirmacion extends StatelessWidget {
               flex: 6,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Color.fromRGBO(255, 0, 0, 1),
                   borderRadius: BorderRadius.circular(2),
                   border: Border.all(
                     color: const Color.fromRGBO(152, 152, 152, 1),
@@ -150,24 +154,27 @@ class Confirmacion extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: size.width * 0.025,
+                        color: Colors.white,
                       ),
                     ),
                     SizedBox(height: size.width * 0.005),
                     Divider(height: 2, color: Colors.black),
                     SizedBox(height: size.width * 0.01),
                     Text(
-                      'MOVIMIENTO HONOR COLORADO',
+                      'PARTIDO COLORADO',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: size.width * 0.025,
+                        color: Colors.white,
                       ),
                     ),
                     SizedBox(height: size.width * 0.015),
                     Text(
-                      'LISTA 2',
+                      'LISTA 1',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: size.width * 0.025,
+                        color: Colors.white,
                       ),
                     ),
                     SizedBox(height: size.width * 0.01),
@@ -182,11 +189,15 @@ class Confirmacion extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: size.width * 0.025,
+                        color: Colors.white,
                       ),
                     ),
                     Text(
-                      'Opción 7',
-                      style: TextStyle(fontSize: size.width * 0.025),
+                      'Opción 5',
+                      style: TextStyle(
+                        fontSize: size.width * 0.025,
+                        color: Colors.white,
+                      ),
                     ),
                     //SizedBox(height: size.width * 0.02),
                     ElevatedButton(
